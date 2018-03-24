@@ -7,6 +7,8 @@ This is a super-simple-small promise-based keyval store implemented with Indexed
 
 [localForage](https://github.com/localForage/localForage) offers similar functionality, but supports older browsers with broken/absent IDB implementations. Because of that, it's 7.4k, whereas idb-keyval is ~550 bytes. Also, it's tree-shaking friendly, so you'll probably end up using fewer than 450 bytes. Pick whichever works best for you!
 
+The current version supports Edge 12+, Firefox 45+, Chrome 33+, Safari 9+. IE10+ users can transpile the library to ES5 and use a [Promise polyfill](https://github.com/taylorhakes/promise-polyfill).
+
 This is only a keyval store. If you need to do more complex things like iteration & indexing, check out [IDB on NPM](https://www.npmjs.com/package/idb) (a little heavier at 1.7k). The first example in its README is how to recreate this library.
 
 ## Usage
